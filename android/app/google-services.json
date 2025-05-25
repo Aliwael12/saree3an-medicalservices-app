@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "654657833503",
+    "project_id": "sareean-93f6c",
+    "storage_bucket": "sareean-93f6c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654657833503:android:d171bc69565faec89de32a",
+        "android_client_info": {
+          "package_name": "com.example.saree3anapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOOLysscJPV_sBcIZq4SqTGLtujQCbzA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

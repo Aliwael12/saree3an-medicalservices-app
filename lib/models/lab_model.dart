@@ -1,0 +1,168 @@
+class Lab {
+  final String id;
+  final String name;
+  final String address;
+  final String phone;
+  final String imageUrl;
+  final double rating;
+  final int reviews;
+  final List<String> availableTests;
+  final double distance;
+  final Map<String, List<String>> availableTimeSlots;
+
+  Lab({
+    required this.id,
+    required this.name,
+    required this.address,
+    required this.phone,
+    required this.imageUrl,
+    required this.rating,
+    required this.reviews,
+    required this.availableTests,
+    required this.distance,
+    required this.availableTimeSlots,
+  });
+
+  static List<Lab> topEgyptianLabs = [
+    Lab(
+      id: '1',
+      name: 'Al Mokhtabar',
+      address: 'Multiple branches across Egypt',
+      phone: '19014',
+      imageUrl: 'assets/images/lab/almokhtabar.jpg',
+      rating: 4.7,
+      reviews: 100,
+      availableTests: ['Blood Tests', 'PCR Tests', 'CT Scan', 'MRI'],
+      distance: 0.0,
+      availableTimeSlots: {
+        'Monday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'],
+        'Tuesday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'],
+        'Wednesday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'],
+        'Thursday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'],
+        'Friday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM'],
+        'Saturday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'],
+        'Sunday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'],
+      },
+    ),
+    Lab(
+      id: '2',
+      name: 'Al Borg',
+      address: 'Multiple branches across Egypt',
+      phone: '19911',
+      imageUrl: 'assets/images/lab/alborg.jpg',
+      rating: 4.6,
+      reviews: 80,
+      availableTests: ['Blood Tests', 'Urine Analysis', 'CT Scan', 'MRI'],
+      distance: 0.0,
+      availableTimeSlots: {
+        'Monday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM'],
+        'Tuesday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM'],
+        'Wednesday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM'],
+        'Thursday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM'],
+        'Friday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM'],
+        'Saturday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM'],
+        'Sunday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM'],
+      },
+    ),
+    Lab(
+      id: '3',
+      name: 'Royal Labs',
+      address: 'Nasr City, Cairo',
+      phone: '16524',
+      imageUrl: 'assets/images/lab/royallabs.png',
+      rating: 4.3,
+      reviews: 40,
+      availableTests: ['Blood Tests', 'Urine Analysis', 'PCR Tests'],
+      distance: 0.0,
+      availableTimeSlots: {
+        'Monday': ['09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '02:30 PM', '03:30 PM'],
+        'Tuesday': ['09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '02:30 PM', '03:30 PM'],
+        'Wednesday': ['09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '02:30 PM', '03:30 PM'],
+        'Thursday': ['09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '02:30 PM', '03:30 PM'],
+        'Friday': ['09:30 AM', '10:30 AM', '11:30 AM'],
+        'Saturday': ['09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '02:30 PM', '03:30 PM'],
+        'Sunday': ['09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '02:30 PM', '03:30 PM'],
+      },
+    ),
+    Lab(
+      id: '4',
+      name: 'Nile Scan',
+      address: 'New Cairo, Cairo',
+      phone: '16370',
+      imageUrl: 'assets/images/lab/nilescan.png',
+      rating: 4.5,
+      reviews: 70,
+      availableTests: ['X-Ray', 'CT Scan', 'MRI', 'Bone Density'],
+      distance: 0.0,
+      availableTimeSlots: {
+        'Monday': ['08:30 AM', '09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM'],
+        'Tuesday': ['08:30 AM', '09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM'],
+        'Wednesday': ['08:30 AM', '09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM'],
+        'Thursday': ['08:30 AM', '09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM'],
+        'Friday': ['08:30 AM', '09:30 AM', '10:30 AM', '11:30 AM'],
+        'Saturday': ['08:30 AM', '09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM'],
+        'Sunday': ['08:30 AM', '09:30 AM', '10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM'],
+      },
+    ),
+    Lab(
+      id: '5',
+      name: 'Cairo Scan',
+      address: 'Multiple branches in Cairo',
+      phone: '19144',
+      imageUrl: 'assets/images/lab/cairoscan.png',
+      rating: 4.4,
+      reviews: 60,
+      availableTests: ['X-Ray', 'CT Scan', 'MRI', 'Ultrasound'],
+      distance: 0.0,
+      availableTimeSlots: {
+        'Monday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Tuesday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Wednesday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Thursday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Friday': ['09:00 AM', '10:00 AM', '11:00 AM'],
+        'Saturday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Sunday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+      },
+    ),
+    Lab(
+      id: '6',
+      name: 'Al Hayah Labs',
+      address: 'Multiple branches',
+      phone: '19344',
+      imageUrl: 'assets/images/lab/alhayat.jpg',
+      rating: 4.4,
+      reviews: 50,
+      availableTests: ['Blood Tests', 'Urine Analysis', 'PCR Tests'],
+      distance: 0.0,
+      availableTimeSlots: {
+        'Monday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM'],
+        'Tuesday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM'],
+        'Wednesday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM'],
+        'Thursday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM'],
+        'Friday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM'],
+        'Saturday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM'],
+        'Sunday': ['08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM'],
+      },
+    ),
+    Lab(
+      id: '7',
+      name: 'Alfa Lab',
+      address: 'Heliopolis, Cairo',
+      phone: '16191',
+      imageUrl: 'assets/images/lab/alfalab.jpg',
+      rating: 4.5,
+      reviews: 70,
+      availableTests: ['Blood Tests', 'Urine Analysis', 'PCR Tests'],
+      distance: 0.0,
+      availableTimeSlots: {
+        'Monday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Tuesday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Wednesday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Thursday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Friday': ['09:00 AM', '10:00 AM', '11:00 AM'],
+        'Saturday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+        'Sunday': ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '02:00 PM', '03:00 PM'],
+      },
+    ),
+  ];
+} 

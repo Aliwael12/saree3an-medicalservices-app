@@ -1,0 +1,113 @@
+name: Sareean
+description: "A medical services app."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+ 
+  cupertino_icons: ^1.0.2
+  fl_chart: ^0.65.0
+  google_maps_flutter: ^2.5.0
+  geolocator: ^14.0.0
+  flutter_map: ^6.1.0  # OpenStreetMap-based map widget
+  latlong2: ^0.9.0  # For LatLng coordinates with flutter_map
+  http: ^1.1.0
+  flutter_animate: ^4.3.0
+  carousel_slider: ^5.0.0
+  provider: ^6.1.1
+  lottie: ^3.0.0
+  font_awesome_flutter: ^10.5.0
+  intl: ^0.19.0
+  shared_preferences: ^2.2.2
+  flutter_localizations:
+    sdk: flutter
+  google_fonts: ^6.1.0
+  cached_network_image: ^3.3.1
+  url_launcher: ^6.1.14
+  permission_handler: ^11.3.0
+  flutter_launcher_icons: ^0.13.1
+  youtube_player_iframe: ^4.0.0
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.17.5
+  firebase_storage: ^11.5.6
+  firebase_app_check: ^0.2.1+16
+  flutter_svg: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+
+  flutter_lints: ^2.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo.png"
+  min_sdk_android: 21
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/logo.png
+    - assets/images/gradlogo.png
+    - assets/images/ambulance.png
+    - assets/animations/
+    - assets/fonts/Poppins-Regular.ttf
+    - assets/fonts/Poppins-Bold.ttf
+    - assets/fonts/Poppins-Light.ttf
+    - assets/fonts/Poppins-Medium.ttf
+    - assets/icons/
+    - assets/images/lab/almokhtabar.jpg
+    - assets/images/lab/alborg.jpg
+    - assets/images/lab/royallabs.png
+    - assets/images/lab/nilescan.png
+    - assets/images/lab/cairoscan.png
+    - assets/images/lab/alhayat.jpg
+    - assets/images/lab/alfalab.jpg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
