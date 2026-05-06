@@ -11,43 +11,89 @@
 
 ---
 
+## 📊 Repository Statistics
+
+### Language Composition
+```
+Dart       ████████████████████████████████████████ 91.8%
+C++        ██▌ 4.1%
+CMake      █▌ 3.2%
+Swift      ▌ 0.5%
+C          ▌ 0.2%
+HTML       ▌ 0.2%
+```
+
+**Language Breakdown:**
+- **Dart**: 91.8% (Core Flutter app development)
+- **C++**: 4.1% (Native platform-specific code)
+- **CMake**: 3.2% (Build system for native code)
+- **Swift**: 0.5% (iOS platform extensions)
+- **C**: 0.2% (Low-level system interactions)
+- **HTML**: 0.2% (Web components)
+
+---
+
 ## 📸 Screenshots & Demo
 
-### App Demo (Add GIF/Video Here)
-![Saree3an App Demo](https://via.placeholder.com/600x400?text=App+Demo+Video/GIF)
-*Demo: Full app walkthrough showing booking and tracking features*
+### App Architecture Overview
+```
+┌──────────────────────────────────────────────────────────┐
+│                    Flutter UI Layer                       │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐     │
+│  │ Screens │  │ Widgets │  │ Dialogs │  │ Routes  │     │
+│  └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘     │
+└───────┼────────────┼────────────┼────────────┼───────────┘
+        │            │            │            │
+┌───────▼────────────▼────────────▼────────────▼───────────┐
+│              Provider State Management                    │
+└───────────────┬─────────────────────────────┬─────────────┘
+                │                             │
+        ┌───────▼───────┐            ┌────────▼────────┐
+        │ Service Layer │            │  Local Storage  │
+        │ • Firebase    │            │  • SharedPrefs  │
+        │ • API Calls   │            │  • SQLite       │
+        └───────┬───────┘            └────────┬────────┘
+                │                             │
+        ┌───────▼──────────────────────────────▼──────┐
+        │        Backend Services                     │
+        │  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
+        │  │ Firebase │  │ Firestore│  │ Auth    │  │
+        │  │ Realtime │  │ Database │  │ System  │  │
+        │  └──────────┘  └──────────┘  └──────────┘  │
+        └────────────────────────────────────────────┘
+```
 
 ### Feature Highlights
 
 #### 1. Lab Test Booking
-![Lab Test Booking](https://via.placeholder.com/300x500?text=Lab+Booking+Screen)
-- Easy online booking
+- Easy online booking interface
 - Home collection available
 - Real-time status updates
+- Test history tracking
 
 #### 2. Ambulance Request & Tracking
-![Ambulance Tracking](https://via.placeholder.com/300x500?text=Ambulance+Tracking)
 - Real-time GPS tracking
-- Driver information
+- Driver information & ratings
 - ETA display
+- Emergency SOS feature
 
 #### 3. Doctor Appointments
-![Doctor Scheduling](https://via.placeholder.com/300x500?text=Doctor+Appointment)
 - Schedule with specialists
 - View appointment history
 - Doctor ratings & reviews
+- Video consultation support
 
 #### 4. Medical History
-![Medical History](https://via.placeholder.com/300x500?text=Medical+History)
-- Centralized records
+- Centralized medical records
 - All past services
-- Easy reference
+- Easy reference & export
+- Document storage
 
 ---
 
 ## 📋 Project Overview
 
-**Saree3an** is a comprehensive medical services app that allows users to book lab tests, request ambulances, schedule doctor visits, and view their medical history. The app provides real-time tracking, instant notifications, and a seamless healthcare experience with a clean, intuitive interface.
+**Saree3an** is a comprehensive medical services app that allows users to book lab tests, request ambulances, schedule doctor visits, and view their medical history. The app provides real-time tracking, secure authentication, and a seamless user experience across all platforms.
 
 ### Key Features
 - ✅ **User Registration & Login** via Firebase Auth
@@ -217,12 +263,12 @@ TestReservation {
 
 ```mermaid
 Start → Sign Up/Login → Firebase Auth
-          ↓
-    Email/Password Verified?
-          ↓
-    Yes → Load User Data from Firestore
-          ↓
-    Display Dashboard → Choose Service
+           ↓
+     Email/Password Verified?
+           ↓
+     Yes → Load User Data from Firestore
+           ↓
+     Display Dashboard → Choose Service
 ```
 
 ---
