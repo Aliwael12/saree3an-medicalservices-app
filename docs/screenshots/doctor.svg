@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" font-family="Inter, Segoe UI, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1976D2"/>
+      <stop offset="100%" stop-color="#2196F3"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#26C6DA"/>
+      <stop offset="100%" stop-color="#0097A7"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="720" rx="28" fill="#F5F7FA"/>
+
+  <rect width="360" height="24" fill="#1976D2"/>
+  <text x="16" y="17" fill="#ffffff" font-size="11" font-weight="600">9:41</text>
+
+  <rect y="24" width="360" height="60" fill="url(#hdr)"/>
+  <path d="M22 56 l-10 -10 l10 -10" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="42" y="60" fill="#ffffff" font-size="15" font-weight="700">Find a Doctor</text>
+
+  <!-- specialties chips -->
+  <g transform="translate(16 100)" font-size="11" font-weight="600">
+    <g><rect width="86" height="32" rx="16" fill="#1976D2"/><text x="43" y="20" text-anchor="middle" fill="#ffffff">All</text></g>
+    <g transform="translate(94 0)"><rect width="92" height="32" rx="16" fill="#ffffff" stroke="#E3E8EF"/><text x="46" y="20" text-anchor="middle" fill="#0F2742">Cardiology</text></g>
+    <g transform="translate(194 0)"><rect width="84" height="32" rx="16" fill="#ffffff" stroke="#E3E8EF"/><text x="42" y="20" text-anchor="middle" fill="#0F2742">Dermat.</text></g>
+    <g transform="translate(286 0)"><rect width="60" height="32" rx="16" fill="#ffffff" stroke="#E3E8EF"/><text x="30" y="20" text-anchor="middle" fill="#0F2742">ENT</text></g>
+  </g>
+
+  <!-- featured doctor -->
+  <g transform="translate(16 152)">
+    <rect width="328" height="120" rx="18" fill="url(#hero)"/>
+    <!-- avatar -->
+    <g transform="translate(20 20)">
+      <circle cx="40" cy="40" r="40" fill="#ffffff"/>
+      <circle cx="40" cy="34" r="14" fill="#0097A7"/>
+      <path d="M14 76 Q14 54 40 54 Q66 54 66 76 Z" fill="#0097A7"/>
+      <!-- stethoscope hint -->
+      <path d="M28 50 q0 12 12 12 q12 0 12 -12" fill="none" stroke="#ffffff" stroke-width="2"/>
+    </g>
+    <text x="116" y="42" fill="#ffffff" font-size="15" font-weight="800">Dr. Nour El-Din</text>
+    <text x="116" y="60" fill="#B2EBF2" font-size="11">Cardiologist · 12 yrs exp.</text>
+    <g transform="translate(116 70)">
+      <text fill="#FFEB3B" font-size="11" font-weight="700">★★★★★</text>
+      <text x="78" y="0" fill="#ffffff" font-size="10" font-weight="600">4.9 (312)</text>
+    </g>
+    <g transform="translate(116 86)">
+      <rect width="86" height="22" rx="11" fill="#ffffff"/>
+      <text x="43" y="15" text-anchor="middle" fill="#0097A7" font-size="10" font-weight="800">VIDEO CALL</text>
+    </g>
+    <g transform="translate(208 86)">
+      <rect width="60" height="22" rx="11" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff"/>
+      <text x="30" y="15" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="700">In-clinic</text>
+    </g>
+  </g>
+
+  <!-- pick a date -->
+  <text x="20" y="296" fill="#0F2742" font-size="13" font-weight="700">Available slots — Thu, May 8</text>
+  <g transform="translate(16 308)" font-size="11" font-weight="600">
+    <g><rect width="76" height="36" rx="12" fill="#ffffff" stroke="#E3E8EF"/><text x="38" y="23" text-anchor="middle" fill="#0F2742">10:00</text></g>
+    <g transform="translate(84 0)"><rect width="76" height="36" rx="12" fill="#2196F3"/><text x="38" y="23" text-anchor="middle" fill="#ffffff">11:30</text></g>
+    <g transform="translate(168 0)"><rect width="76" height="36" rx="12" fill="#ffffff" stroke="#E3E8EF"/><text x="38" y="23" text-anchor="middle" fill="#0F2742">13:00</text></g>
+    <g transform="translate(252 0)"><rect width="76" height="36" rx="12" fill="#ffffff" stroke="#E3E8EF"/><text x="38" y="23" text-anchor="middle" fill="#0F2742">15:30</text></g>
+  </g>
+
+  <!-- more doctors -->
+  <text x="20" y="376" fill="#0F2742" font-size="13" font-weight="700">More specialists</text>
+
+  <g transform="translate(16 388)">
+    <rect width="328" height="80" rx="16" fill="#ffffff" stroke="#E3E8EF"/>
+    <g transform="translate(16 16)">
+      <circle cx="24" cy="24" r="24" fill="#FFE0B2"/>
+      <circle cx="24" cy="20" r="9" fill="#EF6C00"/>
+      <path d="M8 46 Q8 32 24 32 Q40 32 40 46 Z" fill="#EF6C00"/>
+    </g>
+    <text x="80" y="36" fill="#0F2742" font-size="13" font-weight="700">Dr. Mariam H.</text>
+    <text x="80" y="52" fill="#7A8A99" font-size="10">Dermatology · 8 yrs</text>
+    <text x="80" y="68" fill="#FFB300" font-size="10" font-weight="700">★ 4.8 · 210 reviews</text>
+    <g transform="translate(252 24)">
+      <rect width="60" height="32" rx="10" fill="#E3F2FD"/>
+      <text x="30" y="21" text-anchor="middle" fill="#1976D2" font-size="11" font-weight="800">Book</text>
+    </g>
+  </g>
+
+  <g transform="translate(16 480)">
+    <rect width="328" height="80" rx="16" fill="#ffffff" stroke="#E3E8EF"/>
+    <g transform="translate(16 16)">
+      <circle cx="24" cy="24" r="24" fill="#C8E6C9"/>
+      <circle cx="24" cy="20" r="9" fill="#2E7D32"/>
+      <path d="M8 46 Q8 32 24 32 Q40 32 40 46 Z" fill="#2E7D32"/>
+    </g>
+    <text x="80" y="36" fill="#0F2742" font-size="13" font-weight="700">Dr. Omar S.</text>
+    <text x="80" y="52" fill="#7A8A99" font-size="10">Pediatrics · 15 yrs</text>
+    <text x="80" y="68" fill="#FFB300" font-size="10" font-weight="700">★ 4.7 · 480 reviews</text>
+    <g transform="translate(252 24)">
+      <rect width="60" height="32" rx="10" fill="#E3F2FD"/>
+      <text x="30" y="21" text-anchor="middle" fill="#1976D2" font-size="11" font-weight="800">Book</text>
+    </g>
+  </g>
+
+  <g transform="translate(16 572)">
+    <rect width="328" height="80" rx="16" fill="#ffffff" stroke="#E3E8EF"/>
+    <g transform="translate(16 16)">
+      <circle cx="24" cy="24" r="24" fill="#F8BBD0"/>
+      <circle cx="24" cy="20" r="9" fill="#AD1457"/>
+      <path d="M8 46 Q8 32 24 32 Q40 32 40 46 Z" fill="#AD1457"/>
+    </g>
+    <text x="80" y="36" fill="#0F2742" font-size="13" font-weight="700">Dr. Layla A.</text>
+    <text x="80" y="52" fill="#7A8A99" font-size="10">Neurology · 10 yrs</text>
+    <text x="80" y="68" fill="#FFB300" font-size="10" font-weight="700">★ 4.9 · 156 reviews</text>
+    <g transform="translate(252 24)">
+      <rect width="60" height="32" rx="10" fill="#E3F2FD"/>
+      <text x="30" y="21" text-anchor="middle" fill="#1976D2" font-size="11" font-weight="800">Book</text>
+    </g>
+  </g>
+
+  <!-- bottom bar -->
+  <g transform="translate(16 666)">
+    <rect width="328" height="44" rx="14" fill="#1976D2"/>
+    <text x="164" y="28" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">Confirm 11:30 with Dr. Nour</text>
+  </g>
+</svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" font-family="Inter, Segoe UI, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="map" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8F0F7"/>
+      <stop offset="100%" stop-color="#D6E2EE"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C62828"/>
+      <stop offset="100%" stop-color="#E53935"/>
+    </linearGradient>
+    <pattern id="streets" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="url(#map)"/>
+      <path d="M0 30 H60 M30 0 V60" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+      <path d="M0 10 H60 M0 50 H60" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+      <path d="M10 0 V60 M50 0 V60" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+    </pattern>
+  </defs>
+
+  <rect width="360" height="720" rx="28" fill="#F5F7FA"/>
+
+  <rect width="360" height="24" fill="#C62828"/>
+  <text x="16" y="17" fill="#ffffff" font-size="11" font-weight="600">9:41</text>
+  <g transform="translate(316 9)" fill="#ffffff">
+    <rect width="14" height="8" rx="1.5"/><rect x="18" y="2" width="20" height="4" rx="1"/>
+  </g>
+
+  <rect y="24" width="360" height="60" fill="url(#hdr)"/>
+  <path d="M22 56 l-10 -10 l10 -10" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="42" y="60" fill="#ffffff" font-size="15" font-weight="700">Ambulance · Live tracking</text>
+  <g transform="translate(312 38)">
+    <circle cx="12" cy="12" r="11" fill="#ffffff" fill-opacity="0.18"/>
+    <path d="M12 6 v6 l4 3" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- map -->
+  <rect x="0" y="84" width="360" height="396" fill="url(#streets)"/>
+  <!-- park -->
+  <ellipse cx="80" cy="220" rx="60" ry="40" fill="#C8E6C9" opacity="0.8"/>
+  <!-- river -->
+  <path d="M0 360 Q120 340 200 380 T360 370 L360 410 Q220 430 120 405 T0 420 Z" fill="#90CAF9" opacity="0.6"/>
+
+  <!-- route -->
+  <path d="M70 430 Q140 380 180 320 T260 200 Q280 160 300 130" fill="none" stroke="#1976D2" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 0"/>
+  <path d="M70 430 Q140 380 180 320 T260 200 Q280 160 300 130" fill="none" stroke="#42A5F5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- start pin -->
+  <g transform="translate(70 430)">
+    <circle r="14" fill="#ffffff"/>
+    <circle r="8" fill="#1E88E5"/>
+    <circle r="3" fill="#ffffff"/>
+  </g>
+  <!-- end pin -->
+  <g transform="translate(300 130)">
+    <path d="M0 -22 C-12 -22 -16 -10 -16 -6 C-16 4 0 18 0 18 C0 18 16 4 16 -6 C16 -10 12 -22 0 -22 Z" fill="#E53935"/>
+    <circle cy="-8" r="5" fill="#ffffff"/>
+    <path d="M-3 -10 v6 M-6 -7 h6" stroke="#E53935" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- ambulance icon on route -->
+  <g transform="translate(190 304)">
+    <rect x="-22" y="-12" width="44" height="22" rx="4" fill="#ffffff" stroke="#E53935" stroke-width="2"/>
+    <rect x="14" y="-6" width="14" height="16" rx="2" fill="#ffffff" stroke="#E53935" stroke-width="2"/>
+    <circle cx="-12" cy="14" r="5" fill="#263238"/>
+    <circle cx="14" cy="14" r="5" fill="#263238"/>
+    <rect x="-6" y="-6" width="10" height="2" fill="#E53935"/>
+    <rect x="-2" y="-10" width="2" height="10" fill="#E53935"/>
+    <circle cx="0" cy="-18" r="6" fill="#FFEB3B" opacity="0.5"/>
+  </g>
+
+  <!-- ETA pill -->
+  <g transform="translate(110 110)">
+    <rect width="140" height="44" rx="22" fill="#0F2742"/>
+    <circle cx="22" cy="22" r="10" fill="#43A047"/>
+    <text x="22" y="26" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800">8</text>
+    <text x="42" y="20" fill="#ffffff" font-size="11" font-weight="700">Arriving in 8 min</text>
+    <text x="42" y="34" fill="#80DEEA" font-size="9">Driver is on the way</text>
+  </g>
+
+  <!-- driver card -->
+  <g transform="translate(16 504)">
+    <rect width="328" height="172" rx="20" fill="#ffffff" stroke="#E3E8EF"/>
+    <!-- handle -->
+    <rect x="148" y="8" width="32" height="4" rx="2" fill="#CFD8DC"/>
+
+    <text x="20" y="36" fill="#7A8A99" font-size="10" font-weight="600">YOUR DRIVER</text>
+
+    <!-- avatar -->
+    <g transform="translate(20 48)">
+      <circle cx="24" cy="24" r="24" fill="#E3F2FD"/>
+      <circle cx="24" cy="20" r="9" fill="#1976D2"/>
+      <path d="M8 46 Q8 32 24 32 Q40 32 40 46 Z" fill="#1976D2"/>
+    </g>
+
+    <text x="80" y="68" fill="#0F2742" font-size="14" font-weight="700">Ahmed M.</text>
+    <text x="80" y="84" fill="#7A8A99" font-size="11">Toyota HiAce · ABC 1234</text>
+    <g transform="translate(80 90)">
+      <text fill="#FFB300" font-size="11" font-weight="800">★ 4.9</text>
+      <text x="34" y="0" fill="#7A8A99" font-size="10">· 1,240 trips</text>
+    </g>
+
+    <!-- action buttons -->
+    <g transform="translate(232 60)">
+      <rect width="36" height="36" rx="18" fill="#E3F2FD"/>
+      <path d="M14 12 q-2 0 -2 2 q0 8 8 8 q2 0 2 -2 l-3 -3 l-3 3 q-3 -2 -5 -5 l3 -3 l-3 -3 z" fill="#1976D2" transform="translate(2 2)"/>
+    </g>
+    <g transform="translate(276 60)">
+      <rect width="36" height="36" rx="18" fill="#E3F2FD"/>
+      <path d="M10 12 h16 q2 0 2 2 v8 q0 2 -2 2 h-16 q-2 0 -2 -2 v-8 q0 -2 2 -2 z" fill="#1976D2"/>
+      <path d="M8 12 l10 8 l10 -8" stroke="#ffffff" stroke-width="1.6" fill="none"/>
+    </g>
+
+    <line x1="20" y1="116" x2="308" y2="116" stroke="#ECEFF1"/>
+
+    <!-- pickup / drop -->
+    <g transform="translate(20 130)">
+      <circle cx="6" cy="6" r="5" fill="#1E88E5"/>
+      <text x="20" y="10" fill="#0F2742" font-size="10" font-weight="600">12 Tahrir St, Cairo</text>
+    </g>
+    <g transform="translate(20 152)">
+      <rect x="2" y="2" width="8" height="8" fill="#E53935"/>
+      <text x="20" y="10" fill="#0F2742" font-size="10" font-weight="600">As-Salam Hospital · ER</text>
+    </g>
+
+    <!-- SOS -->
+    <g transform="translate(232 130)">
+      <rect width="80" height="36" rx="18" fill="#E53935"/>
+      <text x="40" y="23" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">SOS</text>
+    </g>
+  </g>
+</svg>
